@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "graphql-demo"
+version = "0.1.0"
+description = ""
+authors = ["Gwendolyn Faraday <gwenfaraday@pm.me>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+fastapi = "^0.78.0"
+uvicorn = "^0.18.1"
+SQLAlchemy = "^1.4.37"
+SQLAlchemy-Utils = "^0.38.2"
+psycopg2-binary = "^2.9.3"
+alembic = "^1.8.0"
+strawberry-graphql = {extras = ["fastapi"], version = "^0.114.4"}
+websockets = "^10.3"
+
+[tool.poetry.dev-dependencies]
+black = "^22.3.0"
+flake8 = "^4.0.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
